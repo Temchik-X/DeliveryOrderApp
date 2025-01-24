@@ -27,5 +27,5 @@ RUN dotnet publish "./DeliveryOrderAPI.csproj" -c $BUILD_CONFIGURATION -o /app/p
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-COPY DeliveryOrderAPI/DeliveryOrderDB.db /app/DeliveryOrderDB.db
+COPY DeliveryOrderAPI/DeliveryOrderDB.db DeliveryOrderDB.db
 ENTRYPOINT ["dotnet", "DeliveryOrderAPI.dll"]
