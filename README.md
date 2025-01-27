@@ -91,7 +91,7 @@ cd <repository-folder>
 
 ### Базовый URL
 ```
-https://localhost:7266/api/orders
+https://localhost:5000/api/orders
 ```
 
 ---
